@@ -4,7 +4,10 @@ const fetch = require("node-fetch");
 const client = new Discord.Client();
 
 client.once("ready", () => {
-  console.log("Ready!");
+  client.user.setActivity(
+    " and sending cats in " + client.guilds.size + " servers",
+    { type: "WATCHING" }
+  );
 });
 
 client.on("message", async message => {

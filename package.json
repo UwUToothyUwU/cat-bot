@@ -1,5 +1,5 @@
 {
-  "name": "Cat Bot",
+  "name": "Cat-Bot",
   "version": "1.0.1",
   "description": "An extremely simple Discord bot with one command.",
   "main": "server.js",
@@ -7,9 +7,9 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "discord.js": "^12.2.0",
     "express": "^4.17.1",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "discord.js": "^12.2.0"
   },
   "engines": {
     "node": "12.x"
