@@ -1,5 +1,7 @@
 # catbot
-![Large Top.gg Widget](https://top.gg/api/widget/667575848005795859.svg "Top.gg Widget Large")\n
+![Large Top.gg Widget](https://top.gg/api/widget/667575848005795859.svg "Top.gg Widget Large")
+
+#
 Cat Bot Discord Bot
 To get started, download the repository as a zip file or clone it. Then run `npm install` and then `node server.js`
 #
