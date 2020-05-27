@@ -1,4 +1,4 @@
-# catbot
+# Cat Bot
 ![Large Top.gg Widget](https://top.gg/api/widget/667575848005795859.svg "Top.gg Widget Large")
 
 #
