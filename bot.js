@@ -1,7 +1,8 @@
-const Discord = require("discord.js");
+const { Client } = require("discord.js");
+const $ = require("discord.js").MessageEmbed;
 const fetch = require("node-fetch");
 
-const client = new Discord.Client();
+const client = new Client();
 
 client.once("ready", () => {
   client.user.setActivity(
@@ -11,18 +12,13 @@ client.once("ready", () => {
 });
 
 client.on("message", async message => {
-  if (message.author.bot) return;
-  if (message.content.trim() == "cat") {
-    let embed = new Discord.MessageEmbed();
+  if (message.author.bot || message.content.trim() == "") return;
+  if (message.content.toLowerCase().trim() == "cat") {
     const { file } = await fetch("https://aws.random.cat/meow").then(response =>
       response.json()
     );
-    embed.setTitle("Your Cat");
-    embed.setImage(file);
-    embed.setColor("#" + Math.floor(Math.random() * 16777215).toString(16));
-    return message.channel.send(embed);
+    return message.channel.send(new $().setColor("RANDOM").setTitle("Your Cat").setImage(file));
   }
 });
 
 client.login(process.env.TOKEN);
-
