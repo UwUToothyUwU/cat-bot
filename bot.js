@@ -1,5 +1,5 @@
 const { Client } = require("discord.js");
-const $ = require("discord.js").MessageEmbed;
+const embed = require("discord.js").MessageEmbed;
 const fetch = require("node-fetch");
 
 const client = new Client();
@@ -17,7 +17,7 @@ client.on("message", async message => {
     const { file } = await fetch("https://aws.random.cat/meow").then(response =>
       response.json()
     );
-    return message.channel.send(new $().setColor("RANDOM").setTitle("Your Cat").setImage(file));
+    return message.channel.send(new embed().setColor("RANDOM").setTitle("Your Cat").setImage(file));
   }
 });
 
