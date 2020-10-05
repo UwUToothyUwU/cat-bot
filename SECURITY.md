@@ -11,4 +11,4 @@
 
 ## Reporting a Vulnerability
 
-Go to Issues and open a new issue
+Go to [Issues](https://github.com/conqr2/cat-bot/issues) and open a new issue
